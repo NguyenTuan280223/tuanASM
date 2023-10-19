@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body onload="showmycart()" style="background-image:url(https://i.pinimg.com/originals/f4/39/74/f4397440489983f641fb5efa6956940f.jpg);">
+    <div class="container">
+        <header>
+            <div class="col-2">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="menul">
+                    <ul><a href="index.html">TRANG CHỦ</a></ul>
+                    <ul><a href="">GIỚI THIỆU</a></ul>
+                    <ul><a href="">SẢN PHẨM</a></ul>
+                    <ul><strong style="color: red;">SALE</strong></ul>
+                    <ul><a href="">TIN TỨC</a></ul>
+                    <ul><a href="">LIÊN HỆ</a></ul>
+                </div>
+                <div class="menur">
+                   <a href="dangnhap.html"><i class="fa-regular fa-user fa m"></i></a> 
+                    <i class="fa-solid fa-magnifying-glass fa m"></i>  
+                    <a href="cart.html"><i class="fa-solid fa-cart-arrow-down fa m"></i> <span class="nu" id="countsp">0</span></a>
+                </div>
+            </div>
+        </header>
+        <div class="phancach">
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="boxcenter">
+            <div class="box2">
+                <h1>THÔNG TIN GIỎ HÀNG</h1>
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình</th>
+                        <th style="width: 200px">Tên Sản Phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        
+                    </tr>
+                    <tbody id="showcart">
+                        
+                    </tbody>
+                    
+                </table>
+            </div>
+    
+        </div>
+    </div>
+    
+    <script src="asm2.js"></script>
+</body>
+</html>

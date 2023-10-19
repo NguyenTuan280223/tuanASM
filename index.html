@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/css.css">
+    </head>
+<body onload="loaddata()">
+    <header>
+        <div class="col-2">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="menul">
+                <ul><a href="index.html">TRANG CHỦ</a></ul>
+                <ul><a href="">GIỚI THIỆU</a></ul>
+                <ul><a href="">SẢN PHẨM</a></ul>
+                <ul><strong style="color: red;">SALE</strong></ul>
+                <ul><a href="">TIN TỨC</a></ul>
+                <ul><a href="">LIÊN HỆ</a></ul>
+            </div>
+            <div class="menur">
+               <a href="dangnhap.html"><i class="fa-regular fa-user fa m"></i></a> 
+                <i class="fa-solid fa-magnifying-glass fa m"></i>  
+                <a href="cart.html"><i class="fa-solid fa-cart-arrow-down fa m"></i> <span class="nu" id="countsp">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <article style="width: 100%; min-height: 1500px">
+        <div class="image">
+            <div class="baner single-item">
+                <img src="img/silde1.png" alt="">
+                <img src="img/silde2.png" alt="">
+                <img src="img/silde3.png" alt="">
+            </div>
+            <div class="bip">
+                <img src="img/bip.jpg" alt="">
+                
+            </div>
+        </div>
+    
+        <div class="banchay">
+            <h1>TOP SẢN PHẨM BÁN CHẠY</h1>
+        </div>
+        <br>
+        <div class="sanpham" id="listProduct">
+            <div class="sanphamhot" >
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><span>387,000₫</span></div>
+                        <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp2.png" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 01</h2></div>
+                <div class="gia q"><h2>366,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp3.png" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 01</h2></div>
+                <div class="gia q"><h2>388,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp4.png" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYBB 01</h2></div>
+                <div class="gia q"><h2>397,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+        </div>
+
+        <div class="sanpham">
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+        </div>
+
+        <div class="sanpham">
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamhot">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+        </div>
+        <div class="hi">
+            <div class="hi1">
+                <img src="img/silde2.png" alt="" style="height: 173px; width: 670px;">
+            </div>
+            <div class="hi2">
+                <img src="img/silde2.png" alt="" style="height: 173px; width: 670px;">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="banchay">
+            <h1>TOP SẢN PHẨM MỚI NHẤT</h1>
+        </div>
+        <br>
+        <div class="sanpham">
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            
+        </div>
+        <div class="sanpham">
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            
+        </div>
+        <div class="sanpham">
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+            <div class="sanphamthuong">
+                <div class="image"><img src="img/sp1.jpg" alt=""></div>
+                <div class="ten q" ><h2>GIÀY NỮ CAO CẤP TLY – TLYCG 02</h2></div>
+                <div class="gia q"><h2>387,000₫</h2></div>
+                <button class="buy" onclick="themvaogiohang(this)">Đặt Hàng </button>           
+
+            </div>
+        </div>
+
+        <div class="vi">
+<div class="vi1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qbMrVRTEPUA?si=gM_wt2SPJBeEpBdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="vi2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_AQcObEOJcQ?si=p4ic-s9Vk33fzs-v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+ </div>
+
+    </article>
+   
+</body>
+<footer>
+    <div class="footer bg-zinc-800 w-full h-80">
+        <div class="thongtin ">
+            <h2>THÔNG TIN LIÊN HỆ</h2>
+                <ul>Hotline: 0899 126 128</ul>
+                <ul>Email: giaytly.vn@gmail.com</ul>
+                <ul>Website: https://tly.vn</ul>
+                <ul>Địa chỉ: 703 Phan Văn Trị, Phường 7, Gò Vấp, Hồ Chí Minh</ul>
+        </div>
+        <div class="thongtin ">
+            <h2>CHÍNH SÁCH MUA HÀNG</h2>
+                <ul>Hướng dẫn mua hàng</ul>
+                <hr>
+                <ul>Chính sách giao nhận</ul><hr>
+                <ul>Hướng dẫn thanh toán</ul><hr>
+                <ul>Chính sách đổi trả hàng</ul><hr>
+                <ul>Chính sách đại lý</ul><hr>
+        </div>
+        <div class="thongtin ">
+            <h2>CỬA HÀNG</h2>
+                <ul>703 Phan Văn Trị, P7, Q.Gò Vấp, TP.HCM</ul>
+                <ul>Email: giaytly.vn@gmail.com</ul>
+                
+        </div>
+        <div class="thongtin ">
+            <h2>FANPAGE</h2>
+                <ul>TLY: fb.com/giaycaogotdepganday</ul>
+                <ul>Email: giaytly.vn@gmail.com</ul>
+                
+        </div>
+    </div>
+    <div class="chan bg-zinc-900 ">
+        <div class="logol" style="color: grey; text-align: center;" >
+           Copyright 2023 © Viweb Solution>
+        </div>
+        <div class="logor ">
+            <p><img src="img/logof.png" alt=""></p>
+        </div>
+    </div>
+   
+    <script src="asm2.js"></script>
+</footer>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>$('.single-item').slick();
+</script>
+
+<script></script>
